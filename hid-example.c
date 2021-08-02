@@ -106,7 +106,7 @@ int main(int argc, char **argv)
 
 	while (retry--) {
 		if (send_write_request(0x40)) {
-			perror("write 0x45");
+			perror("write 0x40");
 		}
 		sleep(1);
 		read_response();
